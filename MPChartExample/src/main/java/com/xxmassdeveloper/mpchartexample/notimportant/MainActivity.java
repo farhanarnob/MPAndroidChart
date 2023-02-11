@@ -2,6 +2,7 @@
 package com.xxmassdeveloper.mpchartexample.notimportant;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +13,10 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
+import com.farhanrahman.file_create_on_broadcast.service.CustomBroadcastReceiverName;
+import com.farhanrahman.file_create_on_broadcast.service.FileBroadcastReceiver;
+import com.farhanrahman.file_create_on_broadcast.util.FileManager;
+import com.farhanrahman.file_create_on_broadcast.util.PermissionUtil;
 import com.github.mikephil.charting.utils.Utils;
 import com.xxmassdeveloper.mpchartexample.AnotherBarActivity;
 import com.xxmassdeveloper.mpchartexample.BarChartActivity;
@@ -47,12 +52,14 @@ import com.xxmassdeveloper.mpchartexample.StackedBarActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative;
 import com.xxmassdeveloper.mpchartexample.fragments.SimpleChartDemo;
 
+import java.io.File;
 import java.util.ArrayList;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements OnItemClickListener {
-
+    private final FileBroadcastReceiver fileBroadcastReceiver = new FileBroadcastReceiver();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -130,8 +137,21 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         lv.setAdapter(adapter);
 
         lv.setOnItemClickListener(this);
+
+        PermissionUtil.INSTANCE.requestPermission(this);
+        if(PermissionUtil.INSTANCE.getPermissions().length == 0){
+            FileManager.INSTANCE.writeFile(this, FileManager.INSTANCE.createFile(this));
+        }
+        registerReceiver(fileBroadcastReceiver,
+                new IntentFilter(CustomBroadcastReceiverName.com_context_FINISH_TESTING.getStringName()));
     }
 
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(requestCode != RESULT_CANCELED){
+            PermissionUtil.INSTANCE.checkPermissionResult(this, requestCode, permissions, grantResults);
+        }
+    }
     @Override
     public void onItemClick(AdapterView<?> av, View v, int pos, long arg3) {
 
@@ -276,5 +296,21 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
         }
 
         return true;
+    }
+
+    protected void onStop() {
+        super.onStop();
+        if( PermissionUtil.INSTANCE.getPermissionToWriteAccepted()){
+            File file = FileManager.INSTANCE.createFile(this);
+            if(file!= null) {
+                FileManager.INSTANCE.writeFile(this,file);
+            }
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(fileBroadcastReceiver);
     }
 }
