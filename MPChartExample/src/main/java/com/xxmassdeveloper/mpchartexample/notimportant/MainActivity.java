@@ -50,7 +50,7 @@ import com.xxmassdeveloper.mpchartexample.ScatterChartActivity;
 import com.xxmassdeveloper.mpchartexample.ScrollViewActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivity;
 import com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative;
-import com.xxmassdeveloper.mpchartexample.fragments.SimpleChartDemo;
+import com.xxmassdeveloper.mpchartexample.fragments.SimpleChart;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -237,7 +237,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
                 i = new Intent(this, ListViewMultiChartActivity.class);
                 break;
             case 31:
-                i = new Intent(this, SimpleChartDemo.class);
+                i = new Intent(this, SimpleChart.class);
                 break;
             case 32:
                 i = new Intent(this, ScrollViewActivity.class);

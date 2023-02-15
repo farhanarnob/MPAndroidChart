@@ -38,12 +38,12 @@ import com.github.mikephil.charting.utils.MPPointF;
 import com.xxmassdeveloper.mpchartexample.custom.DayAxisValueFormatter;
 import com.xxmassdeveloper.mpchartexample.custom.MyAxisValueFormatter;
 import com.xxmassdeveloper.mpchartexample.custom.XYMarkerView;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BarChartActivity extends DemoBase implements OnSeekBarChangeListener,
+public class BarChartActivity extends Base implements OnSeekBarChangeListener,
         OnChartValueSelectedListener {
 
     private BarChart chart;

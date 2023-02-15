@@ -22,11 +22,11 @@ import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 
-public class DynamicalAddingActivity extends DemoBase implements OnChartValueSelectedListener {
+public class DynamicalAddingActivity extends Base implements OnChartValueSelectedListener {
 
     private LineChart chart;
 

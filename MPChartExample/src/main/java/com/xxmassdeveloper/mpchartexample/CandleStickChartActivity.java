@@ -26,11 +26,11 @@ import com.github.mikephil.charting.data.CandleDataSet;
 import com.github.mikephil.charting.data.CandleEntry;
 import com.github.mikephil.charting.interfaces.datasets.ICandleDataSet;
 import com.github.mikephil.charting.interfaces.datasets.IDataSet;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 
-public class CandleStickChartActivity extends DemoBase implements OnSeekBarChangeListener {
+public class CandleStickChartActivity extends Base implements OnSeekBarChangeListener {
 
     private CandleStickChart chart;
     private SeekBar seekBarX, seekBarY;

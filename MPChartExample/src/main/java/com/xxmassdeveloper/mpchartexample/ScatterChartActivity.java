@@ -27,12 +27,12 @@ import com.github.mikephil.charting.interfaces.datasets.IScatterDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.xxmassdeveloper.mpchartexample.custom.CustomScatterShapeRenderer;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ScatterChartActivity extends DemoBase implements OnSeekBarChangeListener,
+public class ScatterChartActivity extends Base implements OnSeekBarChangeListener,
         OnChartValueSelectedListener {
 
     private ScatterChart chart;

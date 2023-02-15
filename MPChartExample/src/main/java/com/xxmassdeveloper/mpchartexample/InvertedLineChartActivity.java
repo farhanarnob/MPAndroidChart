@@ -28,13 +28,13 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.EntryXComparator;
 import com.xxmassdeveloper.mpchartexample.custom.MyMarkerView;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class InvertedLineChartActivity extends DemoBase implements OnSeekBarChangeListener,
+public class InvertedLineChartActivity extends Base implements OnSeekBarChangeListener,
         OnChartValueSelectedListener {
 
     private LineChart chart;

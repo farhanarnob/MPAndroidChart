@@ -16,14 +16,14 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 
 import com.xxmassdeveloper.mpchartexample.R;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 /**
  * Demonstrates how to keep your charts straight forward, simple and beautiful with the MPAndroidChart library.
  *
  * @author Philipp Jahoda
  */
-public class SimpleChartDemo extends DemoBase {
+public class SimpleChart extends Base {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

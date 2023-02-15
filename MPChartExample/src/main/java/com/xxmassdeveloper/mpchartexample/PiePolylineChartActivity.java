@@ -33,11 +33,11 @@ import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.IDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 
-public class PiePolylineChartActivity extends DemoBase implements OnSeekBarChangeListener,
+public class PiePolylineChartActivity extends Base implements OnSeekBarChangeListener,
         OnChartValueSelectedListener {
 
     private PieChart chart;

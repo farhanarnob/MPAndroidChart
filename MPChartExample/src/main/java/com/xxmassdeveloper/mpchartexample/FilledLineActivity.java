@@ -19,7 +19,7 @@ import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.IFillFormatter;
 import com.github.mikephil.charting.interfaces.dataprovider.LineDataProvider;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 
@@ -32,7 +32,7 @@ import java.util.ArrayList;
  * the area OUTSIDE the lines!
  */
 @SuppressWarnings("SameParameterValue")
-public class FilledLineActivity extends DemoBase {
+public class FilledLineActivity extends Base {
 
     private LineChart chart;
     private final int fillColor = Color.argb(150, 51, 181, 229);

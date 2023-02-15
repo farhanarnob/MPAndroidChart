@@ -22,7 +22,7 @@ import com.xxmassdeveloper.mpchartexample.R;
  *
  * @author Philipp Jahoda
  */
-public abstract class DemoBase extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
+public abstract class Base extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
 
     protected final String[] months = new String[] {
             "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"
@@ -60,6 +60,7 @@ public abstract class DemoBase extends AppCompatActivity implements ActivityComp
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == PERMISSION_STORAGE) {
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 saveToGallery();
@@ -76,13 +77,13 @@ public abstract class DemoBase extends AppCompatActivity implements ActivityComp
                     .setAction(android.R.string.ok, new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            ActivityCompat.requestPermissions(DemoBase.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_STORAGE);
+                            ActivityCompat.requestPermissions(Base.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_STORAGE);
                         }
                     }).show();
         } else {
             Toast.makeText(getApplicationContext(), "Permission Required!", Toast.LENGTH_SHORT)
                     .show();
-            ActivityCompat.requestPermissions(DemoBase.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_STORAGE);
+            ActivityCompat.requestPermissions(Base.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_STORAGE);
         }
     }
 

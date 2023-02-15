@@ -25,12 +25,12 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.utils.FileUtils;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BarChartActivitySinus extends DemoBase implements OnSeekBarChangeListener {
+public class BarChartActivitySinus extends Base implements OnSeekBarChangeListener {
 
     private BarChart chart;
     private SeekBar seekBarX;

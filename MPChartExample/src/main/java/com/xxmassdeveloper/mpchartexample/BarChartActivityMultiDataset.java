@@ -31,12 +31,12 @@ import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.xxmassdeveloper.mpchartexample.custom.MyMarkerView;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class BarChartActivityMultiDataset extends DemoBase implements OnSeekBarChangeListener,
+public class BarChartActivityMultiDataset extends Base implements OnSeekBarChangeListener,
         OnChartValueSelectedListener {
 
     private BarChart chart;

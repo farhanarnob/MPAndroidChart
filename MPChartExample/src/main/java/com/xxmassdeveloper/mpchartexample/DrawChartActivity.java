@@ -22,7 +22,7 @@ import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.listener.OnDrawListener;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +33,7 @@ import java.util.List;
  *
  * @author Philipp Jahoda
  */
-public class DrawChartActivity extends DemoBase implements OnChartValueSelectedListener,
+public class DrawChartActivity extends Base implements OnChartValueSelectedListener,
         OnDrawListener {
 
     private LineChart chart;

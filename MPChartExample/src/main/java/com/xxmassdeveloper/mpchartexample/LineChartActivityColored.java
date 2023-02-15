@@ -15,12 +15,12 @@ import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 
 @SuppressWarnings("SameParameterValue")
-public class LineChartActivityColored extends DemoBase {
+public class LineChartActivityColored extends Base {
 
     private final LineChart[] charts = new LineChart[4];
 

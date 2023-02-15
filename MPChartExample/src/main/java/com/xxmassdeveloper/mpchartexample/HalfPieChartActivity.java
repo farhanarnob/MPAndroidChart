@@ -24,12 +24,12 @@ import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 
 @SuppressWarnings("SameParameterValue")
-public class HalfPieChartActivity extends DemoBase {
+public class HalfPieChartActivity extends Base {
 
     private PieChart chart;
 

@@ -26,7 +26,7 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +37,7 @@ import java.util.List;
  *
  * @author Philipp Jahoda
  */
-public class ListViewBarChartActivity extends DemoBase {
+public class ListViewBarChartActivity extends Base {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

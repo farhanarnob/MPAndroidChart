@@ -9,7 +9,7 @@ android {
     compileSdkVersion 33
     defaultConfig {
         multiDexEnabled true
-        applicationId "com.xxmassdeveloper.mpchartexample"
+        applicationId "com.xxmassdeveloper.mpchart"
         minSdkVersion 28
         targetSdkVersion 33
         versionCode 57
@@ -24,7 +24,7 @@ android {
         }
         debug {
 
-            applicationIdSuffix ".debug"
+            applicationIdSuffix ".chart"
 
             testCoverageEnabled true
 

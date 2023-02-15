@@ -25,12 +25,12 @@ import com.github.mikephil.charting.formatter.IFillFormatter;
 import com.github.mikephil.charting.interfaces.dataprovider.LineDataProvider;
 import com.github.mikephil.charting.interfaces.datasets.IDataSet;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CubicLineChartActivity extends DemoBase implements OnSeekBarChangeListener {
+public class CubicLineChartActivity extends Base implements OnSeekBarChangeListener {
 
     private LineChart chart;
     private SeekBar seekBarX, seekBarY;

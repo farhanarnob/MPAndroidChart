@@ -30,11 +30,11 @@ import com.github.mikephil.charting.interfaces.datasets.IDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.github.mikephil.charting.utils.MPPointF;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 
-public class BubbleChartActivity extends DemoBase implements OnSeekBarChangeListener,
+public class BubbleChartActivity extends Base implements OnSeekBarChangeListener,
         OnChartValueSelectedListener {
 
     private BubbleChart chart;

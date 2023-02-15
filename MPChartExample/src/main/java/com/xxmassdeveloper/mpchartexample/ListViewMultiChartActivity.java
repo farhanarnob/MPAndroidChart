@@ -30,7 +30,7 @@ import com.xxmassdeveloper.mpchartexample.listviewitems.BarChartItem;
 import com.xxmassdeveloper.mpchartexample.listviewitems.ChartItem;
 import com.xxmassdeveloper.mpchartexample.listviewitems.LineChartItem;
 import com.xxmassdeveloper.mpchartexample.listviewitems.PieChartItem;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +41,7 @@ import java.util.List;
  *
  * @author Philipp Jahoda
  */
-public class ListViewMultiChartActivity extends DemoBase {
+public class ListViewMultiChartActivity extends Base {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

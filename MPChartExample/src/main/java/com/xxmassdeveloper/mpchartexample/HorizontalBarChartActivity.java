@@ -29,12 +29,12 @@ import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.MPPointF;
-import com.xxmassdeveloper.mpchartexample.notimportant.DemoBase;
+import com.xxmassdeveloper.mpchartexample.notimportant.Base;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HorizontalBarChartActivity extends DemoBase implements OnSeekBarChangeListener,
+public class HorizontalBarChartActivity extends Base implements OnSeekBarChangeListener,
         OnChartValueSelectedListener {
 
     private HorizontalBarChart chart;
